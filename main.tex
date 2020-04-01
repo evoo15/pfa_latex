@@ -1,0 +1,56 @@
+%! Author = khlil
+%! Date = 01/04/2020
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{inputenc}
+\usepackage{graphicx}
+\graphicspath{images/}
+
+% Format A4
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{fancyhdr}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{Thesis Title}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+\fancyfoot[L]{\leftmark}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{
+Thesis Title\\
+\large{Institution ame}\\
+}
+
+\author{Khlil Turki}
+\date{Day Month Year}
+
+% Document
+\begin{document}
+    \input{title_page.tex}
+
+    \tableofcontents
+
+    \chapter{Etude}
+    \label{ch:chapter1}
+    \input{chapters/chapter01.tex}
+
+    \chapter{Etude2}
+    \label{ch:chapter2}
+    \input{chapters/chapter02.tex}
+
+    \chapter{Etude3}
+    \label{ch:chapter3}
+    \input{chapters/chapter03.tex}
+
+    \chapter{Etude4}
+    \label{ch:chapter4}
+    \input{chapters/chapter04.tex}
+\end{document}
